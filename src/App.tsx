@@ -7,7 +7,8 @@ function App() {
   return (
     <>
       <h1>Hello!</h1>
-      <button onClick={onClose}></button>
+      <input type="text" />
+      <button onClick={onClose}>Отправить</button>
     </>
   );
 }

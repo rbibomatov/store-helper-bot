@@ -1,11 +1,14 @@
-const tg = window.Telegram.WebApp;
-
 export function useTelegram() {
+  const tg = window.Telegram.WebApp;
+
   const onClose = () => {
-    tg.close();
+    tg.sendData({
+      test: "test",
+    });
   };
 
   return {
+    tg,
     onClose,
   };
 }
